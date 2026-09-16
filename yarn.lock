@@ -2444,7 +2444,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jupyterlab/mermaid@npm:^4.6.3":
+"@jupyterlab/mermaid@npm:^4.1.0, @jupyterlab/mermaid@npm:^4.6.3":
   version: 4.6.3
   resolution: "@jupyterlab/mermaid@npm:4.6.3"
   dependencies:
@@ -9774,6 +9774,7 @@ __metadata:
     "@jupyterlab/application": ^4.0.0
     "@jupyterlab/apputils": ^4.0.0
     "@jupyterlab/builder": ^4.0.0
+    "@jupyterlab/mermaid": ^4.1.0
     "@jupyterlab/settingregistry": ^4.0.0
     "@jupyterlab/testutils": ^4.0.0
     "@jupyterlab/ui-components": ^4.0.0

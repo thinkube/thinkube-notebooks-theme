@@ -13,7 +13,7 @@
     },
     "license": "BSD-3-Clause",
     "author": {
-        "name": "Alejandro Mart\u00ednez Corri\u00e1 and the Thinkube contributors",
+        "name": "Alejandro Martínez Corriá and the Thinkube contributors",
         "email": "info@thinkube.com"
     },
     "files": [
@@ -58,6 +58,7 @@
     "dependencies": {
         "@jupyterlab/application": "^4.0.0",
         "@jupyterlab/apputils": "^4.0.0",
+        "@jupyterlab/mermaid": "^4.1.0",
         "@jupyterlab/settingregistry": "^4.0.0",
         "@jupyterlab/ui-components": "^4.0.0",
         "lucide-static": "1.26.0"

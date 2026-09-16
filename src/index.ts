@@ -6,6 +6,7 @@ import {
 import { IThemeManager } from '@jupyterlab/apputils';
 
 import { iconsPlugin } from './icons';
+import { mermaidPlugin } from './mermaid';
 
 /**
  * Initialization data for the thinkube-notebooks-theme extension.
@@ -76,4 +77,4 @@ const splashPlugin: JupyterFrontEndPlugin<void> = {
   }
 };
 
-export default [themePlugin, splashPlugin, iconsPlugin];
+export default [themePlugin, splashPlugin, iconsPlugin, mermaidPlugin];
