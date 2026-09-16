@@ -5,6 +5,7 @@ import {
 
 import { IThemeManager } from '@jupyterlab/apputils';
 
+import { embeddedThemePlugin } from './embedded-theme';
 import { iconsPlugin } from './icons';
 import { mermaidPlugin } from './mermaid';
 
@@ -77,4 +78,10 @@ const splashPlugin: JupyterFrontEndPlugin<void> = {
   }
 };
 
-export default [themePlugin, splashPlugin, iconsPlugin, mermaidPlugin];
+export default [
+  themePlugin,
+  embeddedThemePlugin,
+  splashPlugin,
+  iconsPlugin,
+  mermaidPlugin
+];
