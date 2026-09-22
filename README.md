@@ -36,21 +36,12 @@ The Lucide icons are under the ISC license. See
 
 - JupyterLab >= 4.0.0
 
-## Install
+## How it is installed
 
-To install the extension, execute:
-
-```bash
-pip install thinkube_notebooks_theme
-```
-
-## Uninstall
-
-To remove the extension, execute:
-
-```bash
-pip uninstall thinkube_notebooks_theme
-```
+The theme is not installed on its own and is not on PyPI. The Thinkube
+notebook image (`tk-jupyter-base`, built by the Thinkube installer)
+installs it from this repository and sets it as the default JupyterLab
+theme for every notebook server.
 
 ## Contributing
 
