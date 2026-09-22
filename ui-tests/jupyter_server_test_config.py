@@ -1,3 +1,6 @@
+# Copyright Alejandro Martínez Corriá and the Thinkube contributors
+# SPDX-License-Identifier: BSD-3-Clause
+
 """Server configuration for integration tests.
 
 !! Never use this configuration in production because it

@@ -1,4 +1,9 @@
 /*
+ * Copyright Alejandro Martínez Corriá and the Thinkube contributors
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
+/*
  * Stroke colors for the Lucide icons swapped in by src/icons.ts.
  *
  * JupyterLab recolors icons in special places through `fill` rules only.

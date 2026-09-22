@@ -1,3 +1,8 @@
+/*
+ * Copyright Alejandro Martínez Corriá and the Thinkube contributors
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
 import appWindow from 'lucide-static/icons/app-window.svg';
 import arrowDown from 'lucide-static/icons/arrow-down.svg';
 import arrowDownToDot from 'lucide-static/icons/arrow-down-to-dot.svg';

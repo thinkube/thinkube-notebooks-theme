@@ -1,3 +1,8 @@
+/*
+ * Copyright Alejandro Martínez Corriá and the Thinkube contributors
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
 /**
  * The query parameter Thinkube IDE adds to a notebook it frames: `light` or
  * `dark`, from the kind of the IDE's own color theme.
