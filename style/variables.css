@@ -127,10 +127,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   /* Defaults use Material Design specification */
-  --jp-ui-font-color0: rgba(0, 0, 0, 1);
-  --jp-ui-font-color1: rgba(0, 0, 0, 0.87);
-  --jp-ui-font-color2: rgba(0, 0, 0, 0.54);
-  --jp-ui-font-color3: rgba(0, 0, 0, 0.38);
+  --jp-ui-font-color0: #25211b; /* text, as in thinkube-style */
+  --jp-ui-font-color1: #25211b;
+  --jp-ui-font-color2: #68625b; /* muted text */
+  --jp-ui-font-color3: rgba(37, 33, 27, 0.38);
 
   /*
    * Use these against the brand/accent/warn/error colors.
@@ -168,8 +168,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-heading-font-weight: 500;
 
   /* Defaults use Material Design specification */
-  --jp-content-font-color0: rgba(0, 0, 0, 1);
-  --jp-content-font-color1: rgba(0, 0, 0, 0.87);
+  --jp-content-font-color0: #25211b;
+  --jp-content-font-color1: #25211b;
   --jp-content-font-color2: rgba(0, 0, 0, 0.54);
   --jp-content-font-color3: rgba(0, 0, 0, 0.38);
   --jp-content-link-color: var(--md-blue-700);
@@ -224,33 +224,33 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Brand/accent - Thinkube colors */
 
-  --jp-brand-color0: #004251; /* Primary darkest (oklch 35% 0.12 220) */
-  --jp-brand-color1: #005063; /* Primary (oklch 40% 0.12 220) */
-  --jp-brand-color2: #006f87; /* Primary lighter (oklch 50% 0.10 220) */
-  --jp-brand-color3: #428ba1; /* Primary light (oklch 60% 0.08 220) */
-  --jp-accent-color0: #c2410c; /* Secondary orange, text strength */
-  --jp-accent-color1: #ff6b35; /* Secondary orange (starship prompt) */
-  --jp-accent-color2: #ffb088; /* Secondary orange light */
-  --jp-accent-color3: #ffe3d6; /* Secondary orange lightest */
+  --jp-brand-color0: #004d61; /* teal 800 */
+  --jp-brand-color1: #006680; /* the logo teal (teal 700) */
+  --jp-brand-color2: #22829f; /* teal 600 */
+  --jp-brand-color3: #539cb5; /* teal 500 */
+  --jp-accent-color0: #7f5100; /* sand 700: the second brand family, cream to brown */
+  --jp-accent-color1: #b3884b; /* sand 500 */
+  --jp-accent-color2: #d7c1a0; /* sand 300 */
+  --jp-accent-color3: #ede4d6; /* sand 100, the icon cream */
 
   /* State colors (warn, error, success, info) - Thinkube palette */
 
-  --jp-warn-color0: #946300; /* Warning amber dark */
-  --jp-warn-color1: #ca8a04; /* Warning amber */
-  --jp-warn-color2: #fcd34d; /* Warning amber light */
-  --jp-warn-color3: #fef3c7; /* Warning amber lightest */
-  --jp-error-color0: #b20011; /* Destructive dark (oklch 48% 0.20 27) */
-  --jp-error-color1: #d40c1a; /* Destructive (oklch 55% 0.22 27) */
-  --jp-error-color2: #e06257; /* Destructive light (oklch 65% 0.16 27) */
-  --jp-error-color3: #edaaa2; /* Destructive lightest (oklch 80% 0.08 27) */
-  --jp-success-color0: #00703e; /* Success dark (oklch 48% 0.14 155) */
-  --jp-success-color1: #00884d; /* Success (oklch 55% 0.16 155) */
-  --jp-success-color2: #49a46e; /* Success light (oklch 65% 0.12 155) */
-  --jp-success-color3: #a0caad; /* Success lightest (oklch 80% 0.06 155) */
-  --jp-info-color0: #1156c1; /* Info dark (oklch 48% 0.18 260) */
-  --jp-info-color1: #1c69e3; /* Info (oklch 55% 0.20 260) */
-  --jp-info-color2: #5a8ee4; /* Info light (oklch 65% 0.14 260) */
-  --jp-info-color3: #a0bff2; /* Info lightest (oklch 80% 0.08 260) */
+  --jp-warn-color0: #ca8a04; /* yellow 600 */
+  --jp-warn-color1: #eab308; /* yellow 500 */
+  --jp-warn-color2: #fde047; /* yellow 300 */
+  --jp-warn-color3: #fef9c3; /* yellow 100 */
+  --jp-error-color0: #b91c1c; /* red 700 */
+  --jp-error-color1: #dc2626; /* red 600 */
+  --jp-error-color2: #f87171; /* red 400 */
+  --jp-error-color3: #fecaca; /* red 200 */
+  --jp-success-color0: #15803d; /* green 700 */
+  --jp-success-color1: #16a34a; /* green 600 */
+  --jp-success-color2: #4ade80; /* green 400 */
+  --jp-success-color3: #bbf7d0; /* green 200 */
+  --jp-info-color0: #1d4ed8; /* blue 700 */
+  --jp-info-color1: #2563eb; /* blue 600 */
+  --jp-info-color2: #60a5fa; /* blue 400 */
+  --jp-info-color3: #bfdbfe; /* blue 200 */
 
   /* Cell specific styles */
 
@@ -272,11 +272,9 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* A custom blend of MD grey and blue 600
    * See https://meyerweb.com/eric/tools/color-blend/#546E7A:1E88E5:5:hex */
-  --jp-cell-inprompt-font-color: #307fc1;
+  --jp-cell-inprompt-font-color: #006680; /* the logo teal */
 
-  /* A custom blend of MD grey and orange 600
-   * https://meyerweb.com/eric/tools/color-blend/#546E7A:F4511E:5:hex */
-  --jp-cell-outprompt-font-color: #c2410c;
+  --jp-cell-outprompt-font-color: #7f5100; /* sand 700 */
 
   /* Notebook specific styles */
 
@@ -386,7 +384,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-text-editor-icon-color: var(--md-grey-200);
   --jp-inspector-icon-color: var(--md-grey-200);
   --jp-switch-color: var(--md-grey-400);
-  --jp-switch-true-position-color: #ff6b35;
+  --jp-switch-true-position-color: #006680;
   --jp-switch-cursor-color: rgba(0, 0, 0, 0.8);
 
   /* Vega extension styles */
@@ -398,10 +396,10 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-sidebar-min-width: 180px;
 
   /* Secondary color used by accents.css */
-  --tk-secondary-color: #ff6b35;
-  --tk-secondary-text-color: #c2410c;
+  --tk-secondary-color: #006680; /* brand marks: the logo teal */
+  --tk-secondary-text-color: #006680;
 
-  /* The fill under text: the secondary orange, with white on it. */
-  --tk-secondary-fill-color: #ff6b35;
+  /* The fill under text: the logo teal, with white on it. */
+  --tk-secondary-fill-color: #006680;
   --tk-on-secondary-color: #fff;
 }

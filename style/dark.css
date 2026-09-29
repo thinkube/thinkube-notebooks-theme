@@ -46,9 +46,9 @@ body[data-jp-theme-name='thinkube-notebooks-dark'] {
   --jp-content-font-color1: #fff;
   --jp-content-font-color2: rgba(255, 255, 255, 0.7);
   --jp-content-font-color3: rgba(255, 255, 255, 0.5);
-  --jp-content-link-color: #80e6ff;
-  --jp-content-link-visited-color: #ebbbff;
-  --jp-content-link-hover-color: #bbf2ff;
+  --jp-content-link-color: #ede4d6; /* the icon cream, primary in dark */
+  --jp-content-link-visited-color: #d7c1a0; /* sand 300 */
+  --jp-content-link-hover-color: #fbf6ee; /* sand 50 */
 
   /*
    * Layout, matching the IDE: editor #004051, side bar #003240,
@@ -66,47 +66,47 @@ body[data-jp-theme-name='thinkube-notebooks-dark'] {
   --jp-inverse-layout-color4: #7fa3b5;
 
   /* Primary: the IDE highlight cyan */
-  --jp-brand-color0: #99e9ff;
-  --jp-brand-color1: #bbf2ff;
-  --jp-brand-color2: #0e959c;
+  --jp-brand-color0: #fbf6ee; /* sand 50 */
+  --jp-brand-color1: #ede4d6; /* primary: the icon cream */
+  --jp-brand-color2: #22829f; /* teal 600 */
   --jp-brand-color3: #00718e;
   --jp-brand-color4: #005a6e;
 
-  /* Secondary: starship orange */
-  --jp-accent-color0: #ff6b35;
-  --jp-accent-color1: #ff8b5c;
-  --jp-accent-color2: #ffb088;
-  --jp-accent-color3: #5a3226;
+  /* Accent: the sand family, the icon cream through caramel to brown */
+  --jp-accent-color0: #e6d9c5; /* sand 200 */
+  --jp-accent-color1: #d7c1a0; /* sand 300 */
+  --jp-accent-color2: #c6a575; /* sand 400 */
+  --jp-accent-color3: #492b00; /* sand 900 */
 
-  /* State colors. Warnings are amber so they differ from the brand orange. */
-  --jp-warn-color0: #fbbf24;
-  --jp-warn-color1: #f59e0b;
-  --jp-warn-color2: #fde68a;
-  --jp-warn-color3: #4d3d14;
-  --jp-error-color0: #ff5c69;
-  --jp-error-color1: #ff7882;
-  --jp-error-color2: #ff9da4;
-  --jp-error-color3: #5c1f2a;
-  --jp-success-color0: #00c896;
-  --jp-success-color1: #5ee6b8;
-  --jp-success-color2: #b8f171;
-  --jp-success-color3: #0f4a3a;
-  --jp-info-color0: #67c2e6;
-  --jp-info-color1: #80e6ff;
-  --jp-info-color2: #bbf2ff;
-  --jp-info-color3: #0b4a5e;
+  /* State colors: Tailwind red, green, yellow and blue, as in thinkube-style */
+  --jp-warn-color0: #facc15; /* yellow 400 */
+  --jp-warn-color1: #eab308; /* yellow 500 */
+  --jp-warn-color2: #fde047; /* yellow 300 */
+  --jp-warn-color3: #422006; /* yellow 950 */
+  --jp-error-color0: #f87171; /* red 400 */
+  --jp-error-color1: #ef4444; /* red 500 */
+  --jp-error-color2: #fca5a5; /* red 300 */
+  --jp-error-color3: #450a0a; /* red 950 */
+  --jp-success-color0: #4ade80; /* green 400 */
+  --jp-success-color1: #22c55e; /* green 500 */
+  --jp-success-color2: #86efac; /* green 300 */
+  --jp-success-color3: #052e16; /* green 950 */
+  --jp-info-color0: #60a5fa; /* blue 400 */
+  --jp-info-color1: #3b82f6; /* blue 500 */
+  --jp-info-color2: #93c5fd; /* blue 300 */
+  --jp-info-color3: #172554; /* blue 950 */
   --jp-shortcuts-button-background: var(--jp-brand-color2);
   --jp-shortcuts-button-hover-background: var(--jp-brand-color3);
 
   /* Cells */
   --jp-cell-editor-background: #003240;
   --jp-cell-editor-border-color: #40647d;
-  --jp-cell-editor-box-shadow: inset 0 0 2px #80e6ff;
+  --jp-cell-editor-box-shadow: inset 0 0 2px #ede4d6;
   --jp-cell-editor-active-background: #003240;
   --jp-cell-editor-active-border-color: var(--jp-brand-color1);
   --jp-cell-prompt-not-active-font-color: #a9c3cc;
-  --jp-cell-inprompt-font-color: #80e6ff;
-  --jp-cell-outprompt-font-color: #ff8b5c;
+  --jp-cell-inprompt-font-color: #a1ccdd; /* teal 300 */
+  --jp-cell-outprompt-font-color: #d7c1a0; /* sand 300 */
 
   /* Notebook */
   --jp-notebook-select-background: var(--jp-layout-color1);
@@ -125,7 +125,7 @@ body[data-jp-theme-name='thinkube-notebooks-dark'] {
   --jp-toolbar-active-background: #005a6e;
 
   /* Inputs */
-  --jp-input-box-shadow: inset 0 0 2px #80e6ff;
+  --jp-input-box-shadow: inset 0 0 2px #ede4d6;
   --jp-input-active-background: #002933;
   --jp-input-hover-background: #003240;
   --jp-input-background: #002933;
@@ -192,9 +192,9 @@ body[data-jp-theme-name='thinkube-notebooks-dark'] {
   --jp-accept-color-normal: #00718e;
   --jp-accept-color-hover: #005a6e;
   --jp-accept-color-active: #004051;
-  --jp-warn-color-normal: #c0344a;
-  --jp-warn-color-hover: #a92049;
-  --jp-warn-color-active: #8a1a3c;
+  --jp-warn-color-normal: #b91c1c; /* red fill with white text, as --destructive-fill */
+  --jp-warn-color-hover: #991b1b;
+  --jp-warn-color-active: #7f1d1d;
   --jp-reject-color-normal: #40647d;
   --jp-reject-color-hover: #365870;
   --jp-reject-color-active: #2f5566;
@@ -213,10 +213,10 @@ body[data-jp-theme-name='thinkube-notebooks-dark'] {
   --jp-switch-cursor-color: rgba(255, 255, 255, 0.9);
 
   /* Secondary color used by accents.css */
-  --tk-secondary-color: #ff6b35;
-  --tk-secondary-text-color: #ff8b5c;
-  --tk-secondary-fill-color: #ff6b35;
-  --tk-on-secondary-color: #fff;
+  --tk-secondary-color: #ede4d6; /* brand marks: the icon cream */
+  --tk-secondary-text-color: #ede4d6;
+  --tk-secondary-fill-color: #ede4d6;
+  --tk-on-secondary-color: #002933;
 }
 
 /*

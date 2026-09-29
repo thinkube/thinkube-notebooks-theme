@@ -4,8 +4,9 @@
  */
 
 /*
- * Secondary brand color (the orange of the Thinkube shell prompt) on the
- * "active" and "attention" marks, as in the Thinkube IDE themes:
+ * Brand marks (the logo teal in the light theme, the icon cream in the dark
+ * one) on the "active" and "attention" marks, as in thinkube-style and the
+ * Thinkube IDE themes:
  * the active document tab, the active side bar tab and the notification count.
  * The colors come from --tk-secondary-* in variables.css and dark.css.
  */
