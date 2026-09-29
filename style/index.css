@@ -21,40 +21,32 @@ pre {
   line-height: var(--jp-code-line-height);
 }
 
-/* Replace JupyterLab logo with Thinkube Notebooks logo */
-#jp-MainLogo {
-  background-image: url('./tk_ai.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+/*
+ * Replace the JupyterLab logos with the Thinkube Notebooks icon (the Lucide
+ * notebook-text hexagon from thinkube-style). It is drawn as a mask over the
+ * brand mark colour, so it is the logo teal in the light theme and the icon
+ * cream in the dark one, like TkBrandIcon.
+ */
+#jp-MainLogo,
+#jp-RetroLogo,
+#main-logo {
+  background-image: none;
+  background-color: var(--tk-secondary-color);
+  mask: url('./notebook-text.svg') center / contain no-repeat;
+  -webkit-mask: url('./notebook-text.svg') center / contain no-repeat;
 }
 
-#jp-MainLogo > svg {
-  visibility: hidden;
-}
-
-/* Also replace RetroLab logo if present */
-#jp-RetroLogo {
-  background-image: url('./tk_ai.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
+#jp-MainLogo > svg,
 #jp-RetroLogo > svg {
   visibility: hidden;
 }
 
-/* Replace splash screen animated logo */
+/* The splash screen logo */
 #main-logo svg {
   display: none;
 }
 
 #main-logo {
-  background-image: url('./tk_ai.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   width: 100px;
   height: 100px;
 }
