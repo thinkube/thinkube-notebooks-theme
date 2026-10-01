@@ -1,6 +1,6 @@
 {
   "name": "thinkube-notebooks-theme-ui-tests",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "JupyterLab thinkube-notebooks-theme Integration Tests",
   "private": true,
   "scripts": {

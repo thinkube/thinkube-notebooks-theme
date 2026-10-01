@@ -1,6 +1,6 @@
 {
     "name": "thinkube-notebooks-theme",
-    "version": "0.1.1",
+    "version": "0.1.0",
     "description": "Thinkube Notebooks theme for JupyterLab",
     "keywords": [
         "jupyter",
