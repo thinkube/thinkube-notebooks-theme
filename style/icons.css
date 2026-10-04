@@ -1,0 +1,74 @@
+/*
+ * Copyright Alejandro Martínez Corriá and the Thinkube contributors
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
+/*
+ * Stroke colors for the Lucide icons swapped in by src/icons.ts.
+ *
+ * JupyterLab recolors icons in special places through `fill` rules only.
+ * Lucide icons are drawn with strokes, so each of those places needs the
+ * matching `stroke` rule with the same color. The selectors mirror the `fill`
+ * rules of JupyterLab 4, ordered from lowest to highest specificity.
+ */
+
+.jp-cell-button .jp-icon3[stroke] {
+  stroke: var(--jp-inverse-layout-color4);
+}
+
+.jp-SearchIconGroup .jp-icon3[stroke] {
+  stroke: var(--jp-layout-color0);
+}
+
+.jp-Shortcuts-Submit .jp-icon3[stroke] {
+  stroke: var(--jp-layout-color1);
+}
+
+.jp-ArrayOperationsButton .jp-icon3[stroke],
+.jp-Shortcuts-CurrentHeader .jp-icon3[stroke] {
+  stroke: var(--jp-ui-font-color0);
+}
+
+.jp-extensionmanager-title .jp-icon3[stroke] {
+  stroke: currentcolor;
+}
+
+.jp-cell-button:hover .jp-icon3[stroke] {
+  stroke: var(--jp-inverse-layout-color2);
+}
+
+.jp-Shortcuts-Submit.jp-mod-defunc-Submit .jp-icon3[stroke] {
+  stroke: var(--jp-inverse-layout-color1);
+}
+
+.jp-DirListing-item.jp-mod-selected .jp-icon-selectable[stroke] {
+  stroke: #fff;
+}
+
+.lm-CommandPalette-item.lm-mod-active .jp-icon-selectable[stroke] {
+  stroke: var(--jp-layout-color0);
+}
+
+.jp-Shortcuts-Header:hover .jp-ShortcutTitleItem-sortButton .jp-icon3[stroke],
+.jp-Shortcuts-Header:focus .jp-ShortcutTitleItem-sortButton .jp-icon3[stroke] {
+  stroke: var(--jp-ui-font-color0);
+}
+
+.jp-FileBrowser-toolbar
+  .jp-ToolbarButtonComponent[data-command='launcher:create']
+  .jp-icon3[stroke] {
+  stroke: var(--jp-layout-color1);
+}
+
+#jp-main-statusbar .jp-mod-selected .jp-icon-selectable[stroke] {
+  stroke: #fff;
+}
+
+/*
+ * Side bar tab icons are drawn at 20px. A stroke width of 2.5 on Lucide's
+ * 24-unit grid gives lines of about 2px, the weight of the same icons in the
+ * VS Code activity bar.
+ */
+.jp-SideBar .lm-TabBar-tab svg [stroke] {
+  stroke-width: 2.5;
+}

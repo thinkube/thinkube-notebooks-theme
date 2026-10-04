@@ -1,0 +1,52 @@
+/*
+ * Copyright Alejandro Martínez Corriá and the Thinkube contributors
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
+@import url('./variables.css');
+@import url('./dark.css');
+@import url('./accents.css');
+
+/* Import Google Fonts - Poppins and Noto Sans Mono */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Mono:wght@400;500;600;700&display=swap');
+
+/* Set the default typography for monospace elements */
+tt,
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--jp-code-font-family);
+  font-size: var(--jp-code-font-size);
+  line-height: var(--jp-code-line-height);
+}
+
+/*
+ * Replace the JupyterLab logos with the Thinkube Notebooks icon (the Lucide
+ * notebook-text hexagon from thinkube-style). It is drawn as a mask over the
+ * brand mark colour, so it is the logo teal in the light theme and the icon
+ * cream in the dark one, like TkBrandIcon.
+ */
+#jp-MainLogo,
+#jp-RetroLogo,
+#main-logo {
+  background-image: none;
+  background-color: var(--tk-secondary-color);
+  mask: url('./notebook-text.svg') center / contain no-repeat;
+  -webkit-mask: url('./notebook-text.svg') center / contain no-repeat;
+}
+
+#jp-MainLogo > svg,
+#jp-RetroLogo > svg {
+  visibility: hidden;
+}
+
+/* The splash screen logo */
+#main-logo svg {
+  display: none;
+}
+
+#main-logo {
+  width: 100px;
+  height: 100px;
+}

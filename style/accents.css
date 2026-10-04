@@ -1,0 +1,43 @@
+/*
+ * Copyright Alejandro Martínez Corriá and the Thinkube contributors
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
+/*
+ * Brand marks (the logo teal in the light theme, the icon cream in the dark
+ * one) on the "active" and "attention" marks, as in thinkube-style and the
+ * Thinkube IDE themes:
+ * the active document tab, the active side bar tab and the notification count.
+ * The colors come from --tk-secondary-* in variables.css and dark.css.
+ */
+
+/* Top line of the active document tab */
+.lm-DockPanel-tabBar .lm-TabBar-tab.jp-mod-current::before {
+  background: var(--tk-secondary-color);
+}
+
+/* Line on the outer edge of the active side bar tab */
+.jp-SideBar.lm-TabBar.jp-mod-left .lm-TabBar-tab.lm-mod-current {
+  box-shadow: inset 2px 0 0 var(--tk-secondary-color);
+}
+
+.jp-SideBar.lm-TabBar.jp-mod-right .lm-TabBar-tab.lm-mod-current {
+  box-shadow: inset -2px 0 0 var(--tk-secondary-color);
+}
+
+/* Notification count while notifications are unread */
+.jp-Notification-Status.jp-mod-selected {
+  background-color: var(--tk-secondary-fill-color);
+}
+
+.jp-Notification-Status.jp-mod-selected .jp-Notification-Status-Text {
+  color: var(--tk-on-secondary-color);
+}
+
+#jp-main-statusbar .jp-Notification-Status.jp-mod-selected .jp-icon3[fill] {
+  fill: var(--tk-on-secondary-color);
+}
+
+#jp-main-statusbar .jp-Notification-Status.jp-mod-selected .jp-icon3[stroke] {
+  stroke: var(--tk-on-secondary-color);
+}

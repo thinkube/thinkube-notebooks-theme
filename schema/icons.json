@@ -1,0 +1,16 @@
+{
+  "title": "Thinkube Icons",
+  "description": "Lucide icons for JupyterLab's user interface.",
+  "jupyter.lab.setting-icon": "ui-components:palette",
+  "jupyter.lab.setting-icon-label": "Thinkube Icons",
+  "type": "object",
+  "properties": {
+    "lucideIcons": {
+      "type": "boolean",
+      "title": "Use Lucide icons",
+      "description": "Replace JupyterLab's toolbar, menu and sidebar icons with Lucide icons. Reload the page to apply a change.",
+      "default": true
+    }
+  },
+  "additionalProperties": false
+}
